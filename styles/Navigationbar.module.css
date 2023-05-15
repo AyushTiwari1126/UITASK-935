@@ -1,0 +1,31 @@
+/* ---------------NAVBAR------------------- */
+.navigationtitle {
+    box-shadow: 0px 0px 15px 5px rgb(228, 226, 226);
+}
+
+.navbarlogo {
+    width: 30px;
+    filter: invert(-0.2);
+    margin-right: 5px;
+}
+
+.niceadmin {
+    font-weight: 500;
+    font-size: 26px;
+    color: #012970;
+}
+
+.dropdown {
+    margin-right: 120px;
+}
+
+
+.listicon {
+    margin: 0px 0px 0px 70px;
+}
+
+.dflex {
+    margin: 8px 0px 0px 30px;
+    display: flex;
+    height: 35px;
+}

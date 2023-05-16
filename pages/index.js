@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 const inter = Inter({ subsets: ['latin'] })
+
+
 export default function Home() {
   return (
     <>
@@ -13,9 +15,16 @@ export default function Home() {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <main className={`${styles.main} ${inter.className}`}>
 
-      {/* <main className={`${styles.main} ${inter.className}`}> */}
-      {/* <div className={styles.description}>
+        
+      </main>
+    </>
+  )
+}
+
+
+{/* <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
             <code className={styles.code}>pages/index.js</code>
@@ -108,7 +117,3 @@ export default function Home() {
             </p>
           </a>
         </div> */}
-      {/* </main> */}
-    </>
-  )
-}

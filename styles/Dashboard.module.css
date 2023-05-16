@@ -1,0 +1,12 @@
+.dashboard{
+    background-color: #f6f9ff;
+    /* background-color: aqua; */
+    min-width: 85vw;
+    height: 100vh;
+}
+
+.cards{
+    max-width: 300px;
+    margin: 30px;
+    border-radius: 10px;
+}

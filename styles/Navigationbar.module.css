@@ -3,6 +3,11 @@
     box-shadow: 0px 0px 15px 5px rgb(228, 226, 226);
 }
 
+.navigationtitle span{
+    margin-right: 30px;
+    cursor: pointer;
+}
+
 .navbarlogo {
     width: 30px;
     filter: invert(-0.2);
@@ -15,17 +20,26 @@
     color: #012970;
 }
 
-.dropdown {
-    margin-right: 120px;
-}
-
-
 .listicon {
     margin: 0px 0px 0px 70px;
+}
+
+.listiconactive{
+    margin-left: 70px;
 }
 
 .dflex {
     margin: 8px 0px 0px 30px;
     display: flex;
     height: 35px;
+    width: 300px;
+}
+
+.dropdownitem{
+    width: 200px;
+    height: 25px;
+}
+
+.dropdownimg{
+    margin-right: 5px;
 }

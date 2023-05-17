@@ -1,129 +1,145 @@
 /* ---------------SIDEBAR------------------ */
 .sidebar {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    width: 15vw;
-    height: 100vh;
-    /* box-shadow: 0px 0px 0px 1px black; */
-  }
-  
-  .accordion {
-    margin: 0px 20px;
-    padding-top: 20px;
-    border: none;
-    font-weight: 500;
-  }
-  
-  .accordionheader {
-    box-shadow: 0px 0px 0px 0.01px rgb(191, 191, 222);
-    border: none;
-    font-weight: 500;
-  }
-  
-  .headertitle{
-    font-weight: 500;
-    font-size: 15px;
-    color: #012970;
-  }
-  
-  .accordionitem {
-    border-radius: 0px;
-    border: none;
-    font-weight: 500;
-  }
-  
-  .accordianitem:hover{
-    background-color: #f6f9ff;
-    border-radius: 5px;
-    color: #4154f1;
-    cursor: pointer;
-  }
+  display: flex;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  width: 15vw;
+  height: 100vh;
+  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1)
+}
 
-  .accordionitem ul li {
-    list-style: circle;
-    padding: 10px 0px;
-    margin: 0px;
-    text-decoration: none;
-    color: #012970;;
-    font-size: 15px;
-  }
-  
-  .accordionbody {
-    margin: 0px;
-    padding: 7px 30px;
-    border: none;
-  }
-  
-  .accordionbody ul{
-    margin-bottom: 0px;
-  }
-  
-  .accordionbody ul li a {
-    text-decoration: none;
-    color: #012970;;
-  }
-  
-  .accordionbody ul li:hover{
-    text-decoration: none;
-    color: #4154f1;
-  }
-  
-  .accordionbody ul li:hover{
-    text-decoration: none;
-    color: #4154f1;
-  }
-  
-  .accordionbody ul li a:hover{
-    text-decoration: none;
-    color: #4154f1;
-  }
-  
-  .dashboardtitle{
-    /* margin-left:14px; */
-    margin-bottom: 10px;
-    padding: 5px;
-    height: 40px;
-    width: 250px;
-    border-radius: 5px;
-    background-color: #f6f9ff;;
-    color: #4154f1;
-    cursor: pointer;
-  }
+.accordion {
+  margin: 0px 20px;
+  padding-top: 20px;
+  border: none;
+  font-weight: 500;
+}
 
-  .dashboardtitle a{
-    text-decoration: none;
-  }
+.accordionheader {
+  box-shadow: 0px 0px 0px 0.01px rgb(191, 191, 222);
+  border: none;
+  font-weight: 500;
+}
 
-  
-  .dashboardicon{
-    filter: invert(0.4);
-    margin: 0px 10px 0px 4px;
-    padding-left: 10px;
-  }
-  
-  .cardicon {
-    filter: invert(0.5);
-    padding-right: 10px;
-  }
-  
-  .cardicon:hover{
-    filter: invert(-0.2);
-  }
-  
-  .pages{
-    font-size: small;
-    color: #899bbd;
-    margin: 0px 15px;
-  }
-  
-  /* -----------------Add Application----------------- */
-  .addapplication{
-    align-items: center;
-    justify-content: center;
-  }
-  /* ---------------Process Application--------------- */
-  .processapplication{
-    align-items: center;
-    justify-content: center;
-  }
+.headertitle {
+  font-weight: 500;
+  font-size: 15px;
+  color: #012970;
+}
+
+.accordionitem {
+  border-radius: 0px;
+  border: none;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.accordianitem:hover {
+  background-color: #f6f9ff;
+  border-radius: 5px;
+  color: #4154f1;
+  cursor: pointer;
+}
+
+.accordionitem ul li {
+  list-style: circle;
+  padding: 10px 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: #012970;
+  font-size: 15px;
+}
+
+.accordionbody {
+  margin: 0px;
+  padding: 7px 30px;
+  border: none;
+}
+
+.accordionbody ul {
+  margin-bottom: 0px;
+}
+
+.accordionbody ul li a {
+  text-decoration: none;
+  color: #012970;
+  ;
+}
+
+.accordionbody ul li:hover {
+  text-decoration: none;
+  color: #4154f1;
+}
+
+.accordionbody ul li:hover {
+  text-decoration: none;
+  color: #4154f1;
+}
+
+.accordionbody ul li a:hover {
+  text-decoration: none;
+  color: #4154f1;
+}
+
+.dashboardtitle {
+  /* margin-left:14px; */
+  margin-bottom: 10px;
+  padding: 5px;
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #012970;
+}
+
+.dashboardtitle a {
+  text-decoration: none;
+  color: #012970;
+}
+
+.dashboardicon {
+  filter: invert(0.4);
+  margin: 0px 10px 0px 4px;
+  padding-left: 10px;
+}
+
+.dashboardtitle:hover {
+  background-color: #f6f9ff;
+  color: #4154f1;
+  cursor: pointer;
+}
+
+.dashboardtitle a:hover {
+  text-decoration: none;
+  color: #4154f1;
+  cursor: pointer;
+}
+
+.cardicon {
+  filter: invert(0.5);
+  padding-right: 10px;
+}
+
+.cardicon:hover {
+  filter: invert(-0.2);
+}
+
+.pages {
+  font-size: small;
+  color: #899bbd;
+  margin: 0px 15px 15px 15px;
+}
+
+/* -----------------Add Application----------------- */
+.addapplication {
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------Process Application--------------- */
+.processapplication {
+  align-items: center;
+  justify-content: center;
+}

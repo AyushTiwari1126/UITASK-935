@@ -12,12 +12,12 @@ const Sidebar = () => {
 
                         <div className={styles.dashboardtitle}>
                             <a href="/Dashboard">
-                            <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
-                            Dashboard
+                                <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
+                                Dashboard
                             </a>
                         </div>
 
-                        <Accordion.Item eventKey="0" className={styles.accordionitem}>
+                        <Accordion.Item eventKey="1" className={styles.accordionitem}>
                             <Accordion.Header className={styles.accordionheader} >
                                 <div className={styles.headertitle}>
                                     <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
@@ -33,40 +33,49 @@ const Sidebar = () => {
                                         <a href="/processapplication">Process Application</a>
                                     </li>
                                     <li>
-                                        <a href="/addapplication">Add Application</a>
+                                        <a href="/Alerts">Alerts</a>
                                     </li>
                                     <li>
-                                        <a href="/processapplication">Process Application</a>
+                                        <a href="/Accordion">Accordion</a>
                                     </li>
                                     <li>
-                                        <a href="/addapplication">Add Application</a>
+                                        <a href="/Badges">Badges</a>
                                     </li>
                                     <li>
-                                        <a href="/processapplication">Process Application</a>
+                                        <a href="/Breadcrumbs">Breadcrumbs</a>
                                     </li>
                                     <li>
-                                        <a href="/addapplication">Add Application</a>
+                                        <a href="/Buttons">Buttons</a>
                                     </li>
                                     <li>
-                                        <a href="/processapplication">Process Application</a>
+                                        <a href="/Cards">Cards</a>
                                     </li>
                                     <li>
-                                        <a href="/addapplication">Add Application</a>
+                                        <a href="/Carousel">Carousel</a>
                                     </li>
                                     <li>
-                                        <a href="/processapplication">Process Application</a>
+                                        <a href="/List-Group">List Group</a>
                                     </li>
                                     <li>
-                                        <a href="/addapplication">Add Application</a>
+                                        <a href="/Modal">Modal</a>
                                     </li>
                                     <li>
-                                        <a href="/processapplication">Process Application</a>
+                                        <a href="/Pagination">Pagination</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Progress">Progress</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Spinners">Spinners</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Tooltips">Tooltips</a>
                                     </li>
                                 </ul>
                             </Accordion.Body>
                         </Accordion.Item>
 
-                        <Accordion.Item eventKey="1" className={styles.accordionitem}>
+                        <Accordion.Item eventKey="2" className={styles.accordionitem}>
                             <Accordion.Header className={styles.accordionheader}>
                                 <div className={styles.headertitle}>
                                     <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
@@ -76,16 +85,16 @@ const Sidebar = () => {
                             <Accordion.Body className={styles.accordionbody}>
                                 <ul>
                                     <li>
-                                        <a href="#">Add Application</a>
+                                        <a href="/addapplication">Add Application</a>
                                     </li>
                                     <li>
-                                        <a href="#">Process Application</a>
+                                        <a href="/processapplication">Process Application</a>
                                     </li>
                                 </ul>
                             </Accordion.Body>
                         </Accordion.Item>
 
-                        <Accordion.Item eventKey="2" className={styles.accordionitem}>
+                        <Accordion.Item eventKey="3" className={styles.accordionitem}>
                             <Accordion.Header className={styles.accordionheader}>
                                 <div className={styles.headertitle}>
                                     <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
@@ -104,7 +113,7 @@ const Sidebar = () => {
                             </Accordion.Body>
                         </Accordion.Item>
 
-                        <Accordion.Item eventKey="3" className={styles.accordionitem}>
+                        <Accordion.Item eventKey="4" className={styles.accordionitem}>
                             <Accordion.Header className={styles.accordionheader}>
                                 <div className={styles.headertitle}>
                                     <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
@@ -123,7 +132,7 @@ const Sidebar = () => {
                             </Accordion.Body>
                         </Accordion.Item>
 
-                        <Accordion.Item eventKey="4" className={styles.accordionitem}>
+                        <Accordion.Item eventKey="5" className={styles.accordionitem}>
                             <Accordion.Header className={styles.accordionheader}>
                                 <div className={styles.headertitle}>
                                     <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
@@ -146,147 +155,58 @@ const Sidebar = () => {
                             PAGES
                         </div>
 
-                        <Accordion.Item eventKey="5" className={styles.accordionitem}>
-                            <Accordion.Header className={styles.accordionheader}>
-                                <div className={styles.headertitle}>
-                                    <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
-                                    Profile
-                                </div>
-                            </Accordion.Header>
-                            <Accordion.Body className={styles.accordionbody}>
-                                <ul>
-                                    <li>
-                                        <a href="#">Add Application</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Process Application</a>
-                                    </li>
-                                </ul>
-                            </Accordion.Body>
-                        </Accordion.Item>
+                        <div className={styles.dashboardtitle}>
+                            <a href="#">
+                                <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
+                                Profile
+                            </a>
+                        </div>
 
-                        <Accordion.Item eventKey="6" className={styles.accordionitem}>
-                            <Accordion.Header className={styles.accordionheader}>
-                                <div className={styles.headertitle}>
-                                    <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
-                                    F.A.Q
-                                </div>
-                            </Accordion.Header>
-                            <Accordion.Body className={styles.accordionbody}>
-                                <ul>
-                                    <li>
-                                        <a href="#">Add Application</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Process Application</a>
-                                    </li>
-                                </ul>
-                            </Accordion.Body>
-                        </Accordion.Item>
+                        <div className={styles.dashboardtitle}>
+                            <a href="#">
+                                <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
+                                F.A.Q
+                            </a>
+                        </div>
 
-                        <Accordion.Item eventKey="7" className={styles.accordionitem}>
-                            <Accordion.Header className={styles.accordionheader}>
-                                <div className={styles.headertitle}>
-                                    <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
-                                    Contact
-                                </div>
-                            </Accordion.Header>
-                            <Accordion.Body className={styles.accordionbody}>
-                                <ul>
-                                    <li>
-                                        <a href="#">Add Application</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Process Application</a>
-                                    </li>
-                                </ul>
-                            </Accordion.Body>
-                        </Accordion.Item>
+                        <div className={styles.dashboardtitle}>
+                            <a href="#">
+                                <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
+                                Contact
+                            </a>
+                        </div>
 
-                        <Accordion.Item eventKey="8" className={styles.accordionitem}>
-                            <Accordion.Header className={styles.accordionheader}>
-                                <div className={styles.headertitle}>
-                                    <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
-                                    Register
-                                </div>
-                            </Accordion.Header>
-                            <Accordion.Body className={styles.accordionbody}>
-                                <ul>
-                                    <li>
-                                        <a href="#">Add Application</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Process Application</a>
-                                    </li>
-                                </ul>
-                            </Accordion.Body>
-                        </Accordion.Item>
+                        <div className={styles.dashboardtitle}>
+                            <a href="#">
+                                <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
+                                Register
+                            </a>
+                        </div>
 
-                        <Accordion.Item eventKey="9" className={styles.accordionitem}>
-                            <Accordion.Header className={styles.accordionheader}>
-                                <div className={styles.headertitle}>
-                                    <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
-                                    Login
-                                </div>
-                            </Accordion.Header>
-                            <Accordion.Body className={styles.accordionbody}>
-                                <ul>
-                                    <li>
-                                        <a href="#">Add Application</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Process Application</a>
-                                    </li>
-                                </ul>
-                            </Accordion.Body>
-                        </Accordion.Item>
+                        <div className={styles.dashboardtitle}>
+                            <a href="#">
+                                <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
+                                Login
+                            </a>
+                        </div>
 
-                        <Accordion.Item eventKey="9" className={styles.accordionitem}>
-                            <Accordion.Header className={styles.accordionheader}>
-                                <div className={styles.headertitle}>
-                                    <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
-                                    Error 404
-                                </div>
-                            </Accordion.Header>
-                            <Accordion.Body className={styles.accordionbody}>
-                                <ul>
-                                    <li>
-                                        <a href="#">Add Application</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Process Application</a>
-                                    </li>
-                                </ul>
-                            </Accordion.Body>
-                        </Accordion.Item>
+                        <div className={styles.dashboardtitle}>
+                            <a href="#">
+                                <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
+                                Error 404
+                            </a>
+                        </div>
 
-                        <Accordion.Item eventKey="9" className={styles.accordionitem}>
-                            <Accordion.Header className={styles.accordionheader}>
-                                <div className={styles.headertitle}>
-                                    <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
-                                    Blank
-                                </div>
-                            </Accordion.Header>
-                            <Accordion.Body className={styles.accordionbody}>
-                                <ul>
-                                    <li>
-                                        <a href="#">Add Application</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Process Application</a>
-                                    </li>
-                                </ul>
-                            </Accordion.Body>
-                        </Accordion.Item>
-
+                        <div className={styles.dashboardtitle}>
+                            <a href="#">
+                                <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
+                                Blank
+                            </a>
+                        </div>
                     </Accordion>
-
                 </div>
-
             </div >
-
         </>
     )
 }
-
 export default Sidebar

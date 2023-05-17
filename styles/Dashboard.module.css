@@ -1,12 +1,64 @@
-.dashboard{
+.dashboard {
     background-color: #f6f9ff;
     /* background-color: aqua; */
     min-width: 85vw;
     height: 100vh;
 }
 
-.cards{
+.cardgroup {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+.cards {
     max-width: 300px;
-    margin: 30px;
+    margin: 10px 30px;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #f6f9ff;
+    border: none;
+}
+
+.dashboardtitle {
+    width: 100%;
+    margin: 20px 0px 0px 25px;
+}
+
+.dashboardtitle span {
+    font-size: x-large;
+    font-weight: 500;
+    color: #012970;
+}
+
+.dashboardsubtitle {
+    min-width: 40px;
+
+    font-size: 14px;
+}
+
+.dashboardsubtitle p {
+    margin: 0;
+    padding: 0;
+}
+
+.dashboardsubtitle p a {
+    text-decoration: none;
+    color: #51678f;
+    font-weight: 600;
+}
+
+.hometab {
+    text-decoration: none;
+    color: #899bbd;
+
+}
+
+.hometab:hover {
+    text-decoration: none;
+    color: #51678f;
+}
+
+.hometab:active {
+    text-decoration: none;
+    color: #51678f;
 }

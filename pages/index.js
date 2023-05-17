@@ -1,7 +1,11 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Dashboard from './Dashboard'
 const inter = Inter({ subsets: ['latin'] })
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Sidebar from './Sidebar';
+import Navigationbar from './Navigationbar'
 
 
 export default function Home() {
@@ -15,10 +19,16 @@ export default function Home() {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      {/* <main className={`${styles.main} ${inter.className}`}>
+      </main> */}
 
-        
-      </main>
+      <div className={styles.screenbody}>
+        <Navigationbar/>
+        <div>
+          <Sidebar/>
+        </div>
+
+      </div>
     </>
   )
 }

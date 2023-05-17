@@ -7,16 +7,18 @@ const Dashboard = () => {
     return (
         <>
             <div className={styles.dashboard}>
-                <div>
-                    <div>Dashboard</div>
-                    <div>
-                        <span>Home</span>
-                        <span>/</span>
-                        <span>Dashboard</span>
-                    </div>
+
+                <div className={styles.dashboardtitle}>
+                    <span>Dashboard</span>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" ><a className={styles.hometab} href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page" style={{ cursor: 'pointer' }}> Dashboard</li>
+                        </ol>
+                    </nav>
                 </div>
 
-                <CardGroup>
+                <CardGroup className={styles.cardgroup}>
                     <Card className={styles.cards}>
                         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                         <Card.Body>
@@ -26,9 +28,6 @@ const Dashboard = () => {
                                 to additional content.
                             </Card.Text>
                         </Card.Body>
-                        {/* <Card.Footer>
-                            
-                        </Card.Footer> */}
                     </Card>
                     <Card className={styles.cards}>
                         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
@@ -39,9 +38,6 @@ const Dashboard = () => {
                                 additional content.{' '}
                             </Card.Text>
                         </Card.Body>
-                        {/* <Card.Footer>
-                            
-                        </Card.Footer> */}
                     </Card>
                     <Card className={styles.cards}>
                         {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
@@ -52,37 +48,18 @@ const Dashboard = () => {
                                 to additional content.
                             </Card.Text>
                         </Card.Body>
-                        {/* <Card.Footer>
-                            
-                        </Card.Footer> */}
                     </Card>
                 </CardGroup>
 
-                <div>
-
-                </div>
-                {/* -------------------------------------------------------------------------------------- */}
-
-                <div class="content">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="card ">
-                                    <div class="card-header ">
-                                        <h4 class="card-title">Reports</h4>
-                                        <p class="card-category">Last Campaign Performance</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                {/* <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
-                </div>
-                {/* --------------------------------------------------------------------------------------- */}
-
-
-
-
+                </div> */}
             </div>
+
         </>
     )
 }

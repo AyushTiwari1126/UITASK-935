@@ -18,6 +18,7 @@
     font-weight: 500;
     font-size: 26px;
     color: #012970;
+    text-decoration: none;
 }
 
 .listicon {
@@ -51,4 +52,14 @@
 .designation{
     margin-left: 40px;
     font-size: 14px;
+}
+
+/* ================================================================= */
+
+
+.openmenu{
+    margin: 0px;
+    padding: 0px;
+    width: 16vw;
+
 }

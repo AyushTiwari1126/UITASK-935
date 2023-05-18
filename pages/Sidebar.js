@@ -184,7 +184,7 @@ const Sidebar = () => {
                         </div>
 
                         <div className={styles.dashboardtitle}>
-                            <a href="#">
+                            <a href="/Login">
                                 <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
                                 Login
                             </a>

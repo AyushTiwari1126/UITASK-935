@@ -26,9 +26,21 @@ const Navigationbar = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
+
                             <Nav.Link href="#">
                                 <Image src="/list.svg" width={30} height={30} />
                             </Nav.Link>
+
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                            </div>
 
                             <Form className={styles.dflex} >
                                 <Form.Control
@@ -37,6 +49,7 @@ const Navigationbar = () => {
                                     className="me-2"
                                     aria-label="Search"
                                 />
+
                                 {/* <Button variant="outline-success">
                                     <Image src="/search.svg" width={20} height={20} />
                                 </Button> */}

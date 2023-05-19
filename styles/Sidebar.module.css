@@ -1,12 +1,15 @@
 /* ---------------SIDEBAR------------------ */
 .sidebar {
+  position: fixed;
   display: flex;
   box-sizing: border-box;
   margin: 0px;
+  /* margin-left: -205px;
+  margin-top: 17px; */
   padding: 0px;
   width: 15vw;
   height: 100vh;
-  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1)
+  box-shadow: 0px 0px 10px rgba(1, 41, 112, 0.1)
 }
 
 .accordion {
@@ -136,10 +139,12 @@
 .addapplication {
   align-items: center;
   justify-content: center;
+  margin-left: 15vw;
 }
 
 /* ---------------Process Application--------------- */
 .processapplication {
   align-items: center;
   justify-content: center;
+  margin-left: 15vw;
 }

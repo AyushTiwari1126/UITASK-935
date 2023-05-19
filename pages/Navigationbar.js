@@ -6,10 +6,36 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from 'next/image';
 import styles from '@/styles/Navigationbar.module.css'
+import { useState } from 'react';
+import Sidebar from './Sidebar';
 
 
 const Navigationbar = () => {
 
+    const [toggled, setToggled] = React.useState(true);
+    const toggleImage = () => {
+        let val = !toggled;
+        (val === !toggled ? setToggled(!toggled) : setToggled(toggled))
+    }
+
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "15vw";
+        document.getElementById("main").style.marginLeft = "15vw";
+    }
+
+    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0px";
+        document.getElementById("main").style.marginLeft = "0px";
+    }
+
+    // const [show, setShow] = useState();
+
+    // // function to toggle the boolean value
+    // function toggleShow() {
+    //     setShow(!show);
+    // }
+    // var buttonText = show ? <Image src="/list.svg" width={30} height={30} /> : <Image src="/list.svg" width={30} height={30} />;
 
     return (
         <div className={styles.navigationtitle}>
@@ -27,8 +53,15 @@ const Navigationbar = () => {
                             navbarScroll
                         >
 
-                            <Nav.Link href="#">
+                            {/* <div className="component-container" onClick={toggleShow}>
+                                {buttonText}
+                                {show && children}
+
+                            </div> */}
+
+                            <Nav.Link href="#" onClick={toggleImage}>
                                 <Image src="/list.svg" width={30} height={30} />
+                                {toggled ? <Sidebar/> : ''}
                             </Nav.Link>
 
 

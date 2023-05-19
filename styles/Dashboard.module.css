@@ -3,6 +3,7 @@
     /* background-color: aqua; */
     min-width: 85vw;
     height: 100vh;
+    margin-left: 290px;
 }
 
 .cardgroup {
@@ -20,8 +21,8 @@
 }
 
 .dashboardtitle {
-    width: 100%;
-    margin: 20px 0px 0px 25px;
+    width: 85%;
+    margin: 0px 0px 0px 25px;
 }
 
 .dashboardtitle span {

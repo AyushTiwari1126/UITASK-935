@@ -7,7 +7,6 @@ const inter = Inter({ subsets: ['latin'] })
 import Sidebar from './Sidebar';
 import Navigationbar from './Navigationbar'
 import Footer from './Footer'
-import Offcanvas from './Offcanvas'
 
 
 export default function Home() {

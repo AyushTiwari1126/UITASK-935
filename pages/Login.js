@@ -1,8 +1,10 @@
 import React from 'react'
+import styles from '@/styles/Login.module.css'
+import Image from 'next/image'
 
 const Login = () => {
   return (
-    <div class="container">
+    <div class="container" style={{ marginLeft: "15vw"}}>
 
       <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
         <div class="container">
@@ -10,9 +12,9 @@ const Login = () => {
             <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
               <div class="d-flex justify-content-center py-4">
-                <a href="index.html" class="logo d-flex align-items-center w-auto">
-                  <img src="assets/img/logo.png" alt=""/>
-                  <span class="d-none d-lg-block">NiceAdmin</span>
+                <a href="index.html" class="logo d-flex align-items-center w-auto" className={styles.niceadmintitle}>
+                <Image className={styles.loginimage} src="/logo.png" width={30} height={30} />
+                  <span class="d-none d-lg-block" className={styles.niceadmin}>NiceAdmin</span>
                 </a>
               </div>
 
@@ -52,7 +54,7 @@ const Login = () => {
                       <button class="btn btn-primary w-100" type="submit">Login</button>
                     </div>
                     <div class="col-12">
-                      <p class="small mb-0">Don't have account? <a href="pages-register.html">Create an account</a></p>
+                      <p class="small mb-0">Don't have account? <a href="/register" className={styles.createaccount}>Create an account</a></p>
                     </div>
                   </form>
 
@@ -60,7 +62,7 @@ const Login = () => {
               </div>
 
               <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="https://bootstrapmade.com/" className={styles.bootstrapmade}>BootstrapMade</a>
               </div>
 
             </div>

@@ -7,8 +7,9 @@ import { useEffect } from 'react';
 import Home from '.';
 import Footer from './Footer';
 import { Routes } from 'react-router-dom';
-import Offcanvas from './Offcanvas';
-import Boffcanvas from './Boffcanvas';
+import Default from './Default';
+import ToggleVisibility from './ToggleVisibility';
+import DemoSidebar from './DemoSidebar';
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -16,19 +17,22 @@ export default function App({ Component, pageProps }) {
   }, [])
   return <>
 
-    < Navigationbar />
-    <div style={{ display: "flex" }}>
-      <Sidebar />
-      {/* <Routes /> */}
-    </div>
-    <Offcanvas />
-    <Boffcanvas/>
-    <Footer />
+    <DemoSidebar/>
+    {/* <div>
+      < Navigationbar />
+      <div style={{ display: "flex" }}>
+        <div className="App">
+          <Sidebar />
+        </div>
+        
+      </div>
+    </div> */}
 
     <Component {...pageProps} />
   </>
-
 }
 
-{/* <Offcanvas /> */ }
-{/* <ToggleNavbar /> */ }
+
+{/* <ToggleVisibility>
+        <Default />
+      </ToggleVisibility> */}

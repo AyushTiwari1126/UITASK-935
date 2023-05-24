@@ -6,10 +6,10 @@ import Dashboard from './Dashboard';
 import { useEffect } from 'react';
 import Home from '.';
 import Footer from './Footer';
-import { Routes } from 'react-router-dom';
-import Default from './Default';
-import ToggleVisibility from './ToggleVisibility';
-import DemoSidebar from './DemoSidebar';
+import Asidebar from './Asidebar';
+import Newadmin from './Newadmin';
+import Headerpage from './Headerpage';
+
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -17,22 +17,19 @@ export default function App({ Component, pageProps }) {
   }, [])
   return <>
 
-    <DemoSidebar/>
+    <Headerpage />
+    {/* <Asidebar/> */}
+
     {/* <div>
       < Navigationbar />
       <div style={{ display: "flex" }}>
-        <div className="App">
+        <div className="App" style={{ display: "flex" }}>
           <Sidebar />
+          <Dashboard />
         </div>
-        
       </div>
     </div> */}
 
     <Component {...pageProps} />
   </>
 }
-
-
-{/* <ToggleVisibility>
-        <Default />
-      </ToggleVisibility> */}

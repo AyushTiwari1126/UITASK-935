@@ -3,7 +3,7 @@
     /* background-color: aqua; */
     min-width: 85vw;
     height: 100vh;
-    margin-left: 15vw;
+    margin-left: 290px;
 }
 
 .cardgroup {
@@ -62,4 +62,10 @@
 .hometab:active {
     text-decoration: none;
     color: #51678f;
+}
+
+/* -------------------- ALERTS CSS----------------------- */
+
+.alerts{
+    margin-left: 15vw;
 }

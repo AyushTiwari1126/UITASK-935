@@ -1,0 +1,126 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-color: #f4f4fb;
+} */
+.navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+    padding-left: 6rem;
+}
+
+.profile {
+    display: flex;
+    width: 32%;
+    max-width: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profileimage {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profilename {
+    font-size: 0.9rem;
+    margin-left: -20px;
+}
+
+/* ========================SIDEBAR CSS========================= */
+
+.sidetoggle {
+    position: fixed;
+    z-index: 2;
+    top: 20;
+    left: 25;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 200px;
+    left: 0;
+    top: 0;
+    padding: 80px 0px 20px 0px;
+    color: #fff;
+    background-color: blue;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebarmenu {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebarmenu > span {
+    font-size: 25px;
+    padding-right: 30px;
+
+}
+
+.sidebarmenu:hover {
+    color: blue;
+    background-color: #f8f8fb;
+}
+
+#toggle:checked~.sidebar {
+    width: 70px;
+}
+
+#toggle:checked~.sidebar .sidebarmenu>p {
+    display: none;
+}
+
+/* ================ DASHBOARD ======================= */
+/* .main{
+    min-height: 100%;
+    padding: 6rem 1rem 2rem 14rem;
+}
+.dashboardcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 0.5fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas: 
+    "total1 total2 total3 total4 total4"
+    "detail detail detail customer customer"
+    "detail detail detail customer customer"
+}
+
+.card{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.total1 {
+    grid-area: total1;
+    background-color: #2d972e;
+    color: #fff;
+} */

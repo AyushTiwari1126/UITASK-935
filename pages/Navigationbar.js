@@ -8,7 +8,7 @@ import Image from 'next/image';
 import styles from '@/styles/Navigationbar.module.css'
 import { useState } from 'react';
 import Sidebar from './Sidebar';
-
+import Dashboard from './Dashboard';
 
 const Navigationbar = () => {
 
@@ -18,24 +18,15 @@ const Navigationbar = () => {
         (val === !toggled ? setToggled(!toggled) : setToggled(toggled))
     }
 
-    function openNav() {
-        document.getElementById("mySidebar").style.width = "15vw";
-        document.getElementById("main").style.marginLeft = "15vw";
-    }
-
-    /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-    function closeNav() {
-        document.getElementById("mySidebar").style.width = "0px";
-        document.getElementById("main").style.marginLeft = "0px";
-    }
-
-    // const [show, setShow] = useState();
-
-    // // function to toggle the boolean value
-    // function toggleShow() {
-    //     setShow(!show);
+    // function openNav() {
+    //     document.getElementById("mySidebar").style.width = "15vw";
+    //     document.getElementById("main").style.marginLeft = "15vw";
     // }
-    // var buttonText = show ? <Image src="/list.svg" width={30} height={30} /> : <Image src="/list.svg" width={30} height={30} />;
+
+    // function openNavTest() {
+    //     document.getElementById("sidebarid").style.width = "15vw";
+    //     document.getElementById("main").style.marginLeft = "15vw";
+    // }
 
     return (
         <div className={styles.navigationtitle}>
@@ -56,14 +47,15 @@ const Navigationbar = () => {
                             {/* <div className="component-container" onClick={toggleShow}>
                                 {buttonText}
                                 {show && children}
-
                             </div> */}
 
                             <Nav.Link href="#" onClick={toggleImage}>
                                 <Image src="/list.svg" width={30} height={30} />
-                                {toggled ? <Sidebar/> : ''}
+                                {toggled ? <Sidebar /> : ''}
                             </Nav.Link>
 
+                            {/* <Image src="/list.svg" width={30} height={30} onClick={openNavTest} id='cus_open_sidebar' />
+                            <Image src="/list.svg" width={30} height={30} onClick={closeNavTest} className={styles.cus_close_slide} id='cus_close_sidebar' /> */}
 
                             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -92,8 +84,13 @@ const Navigationbar = () => {
                         <span href="#"><Image src="/bell.svg" width={22} height={22} /></span>
                         <span href="#"><Image src="/chat-left-text.svg" width={22} height={22} /></span>
 
+
+                        <Nav.Link href="#">
+                            <Image className={styles.profileimg} src="/profile-img.jpg" width={30} height={30} />
+                        </Nav.Link>
                         <NavDropdown align="end" title="K. Anderson" id="navbarScrollingDropdown" className={styles.dropdown}>
                             {/* <NavDropdown.Item href="#action3">Action</NavDropdown.Item> */}
+
                             <NavDropdown.Item className={styles.namedesignation} href="#">
                                 <div className={styles.name}>Kevin Anderson</div>
                                 <div className={styles.designation}>Web Designer</div>

@@ -3,7 +3,7 @@
     box-shadow: 0px 0px 25px 5px rgb(228, 226, 226);
 }
 
-.navigationtitle span{
+.navigationtitle span {
     margin-right: 30px;
     cursor: pointer;
 }
@@ -11,7 +11,7 @@
 .navbarlogo {
     width: 30px;
     filter: invert(-0.2);
-    margin-right: 5px;
+    margin: 0px 5px 5px 0px;
 }
 
 .niceadmin {
@@ -19,14 +19,43 @@
     font-size: 26px;
     color: #012970;
     text-decoration: none;
+    margin-top: 0px;
+}
+
+.cus_close_slide {
+    display: none;
 }
 
 .listicon {
-    margin: 0px 0px 0px 70px;
+    margin-left: 70px;
 }
 
-.listiconactive{
+.listiconactive {
     margin-left: 70px;
+}
+
+.togglesidebarbtn {
+    font-size: 75px;
+    padding-left: 0px;
+    cursor: pointer;
+    color: #012970;
+    margin-left: 70px
+}
+
+/* @media (max-width: 1199px) {
+    .toggle-sidebar .sidebar {
+        left: 0;
+    }
+} */
+
+@media (min-width: 1200px) {
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer {
+        margin-left: 0;
+    }
+    .toggle-sidebar .sidebar {
+        left: -300px;
+    }
 }
 
 .dflex {
@@ -36,20 +65,36 @@
     width: 300px;
 }
 
-.dropdownitem{
+.profileimg {
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.dropdown {
+    color: #012970;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.dropdownitem {
     width: 200px;
     height: 25px;
 }
 
-.dropdownimg{
+.dropdownimg {
     margin-right: 5px;
 }
-.name{
+
+.name {
     font-weight: 700px;
     margin-left: 30px;
     font-size: 18px;
 }
-.designation{
+
+.designation {
     margin-left: 40px;
     font-size: 14px;
 }
@@ -57,7 +102,7 @@
 /* ================================================================= */
 
 
-.openmenu{
+.openmenu {
     margin: 0px;
     padding: 0px;
     width: 16vw;

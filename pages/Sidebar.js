@@ -4,6 +4,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import Image from 'next/image';
 
 const Sidebar = () => {
+
     return (
         <>
             <div id='sidebarid' className={styles.sidebar}>
@@ -16,6 +17,25 @@ const Sidebar = () => {
                                 Dashboard
                             </a>
                         </div>
+
+                        <Accordion.Item eventKey="6" className={styles.accordionitem}>
+                            <Accordion.Header className={styles.accordionheader} >
+                                <div className={styles.headertitle}>
+                                    <Image className={styles.cardicon} src="/credit-card.svg" width={30} height={30} />
+                                    Card Production
+                                </div>
+                            </Accordion.Header>
+                            <Accordion.Body className={styles.accordionbody}>
+                                <ul>
+                                    <li>
+                                        <a href="/addapplication">Add Application</a>
+                                    </li>
+                                    <li>
+                                        <a href="/processapplication">Process Application</a>
+                                    </li>
+                                </ul>
+                            </Accordion.Body>
+                        </Accordion.Item>
 
                         <Accordion.Item eventKey="1" className={styles.accordionitem}>
                             <Accordion.Header className={styles.accordionheader} >

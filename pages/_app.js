@@ -9,6 +9,7 @@ import Footer from './Footer';
 import Asidebar from './Asidebar';
 import Newadmin from './Newadmin';
 import Headerpage from './Headerpage';
+import Homescreen from './Homescreen';
 
 
 export default function App({ Component, pageProps }) {
@@ -17,7 +18,8 @@ export default function App({ Component, pageProps }) {
   }, [])
   return <>
 
-    <Headerpage />
+    {/* <Headerpage /> */}
+    <Homescreen />
     {/* <Asidebar/> */}
 
     {/* <div>

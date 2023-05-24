@@ -1,0 +1,354 @@
+/* =============== NAVIGATION BAR ================ */
+.navigationtitle {
+    box-shadow: 0px 0px 25px 5px rgb(228, 226, 226);
+}
+
+.navigationtitle span {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.navbarlogo {
+    width: 30px;
+    filter: invert(-0.2);
+    margin: 0px 5px 5px 0px;
+}
+
+.niceadmin {
+    font-weight: 500;
+    font-size: 26px;
+    color: #012970;
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+.cus_close_slide {
+    display: none;
+}
+
+.listicon {
+    margin-left: 70px;
+}
+
+.listimg{
+    margin-left: 70px;
+}
+
+.listiconactive {
+    margin-left: 70px;
+}
+
+.togglesidebarbtn {
+    font-size: 75px;
+    padding-left: 0px;
+    cursor: pointer;
+    color: #012970;
+    margin-left: 70px
+}
+
+/* @media (max-width: 1199px) {
+    .toggle-sidebar .sidebar {
+        left: 0;
+    }
+} */
+
+@media (min-width: 1200px) {
+
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer {
+        margin-left: 0;
+    }
+
+    .toggle-sidebar .sidebar {
+        left: -300px;
+    }
+}
+
+.dflex {
+    margin: 8px 0px 0px 30px;
+    display: flex;
+    height: 35px;
+    width: 300px;
+}
+
+.profileimg {
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.dropdown {
+    color: #012970;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.dropdownitem {
+    width: 200px;
+    height: 25px;
+}
+
+.dropdownimg {
+    margin-right: 5px;
+}
+
+.name {
+    font-weight: 700px;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.designation {
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+/* ====================== */
+
+.openmenu {
+    margin: 0px;
+    padding: 0px;
+    width: 16vw;
+}
+
+/* ======================== SIDEBAR ======================== */
+.sidebar {
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    margin: 0px;
+
+    /* margin: 17px 0px 0px -205px; */
+    padding: 0px;
+    width: 15vw;
+    height: 100vh;
+    transition: 0.5s;
+    /* box-shadow: 0px 0px 10px rgba(1, 41, 112, 0.1); */
+}
+
+.accordion {
+    margin: 0px 20px;
+    padding-top: 20px;
+    border: none;
+    font-weight: 500;
+}
+
+.accordionheader {
+    box-shadow: 0px 0px 0px 0.01px rgb(191, 191, 222);
+    border: none;
+    font-weight: 500;
+}
+
+.headertitle {
+    font-weight: 500;
+    font-size: 15px;
+    color: #012970;
+}
+
+.accordionitem {
+    border-radius: 0px;
+    border: none;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.accordianitem:hover {
+    background-color: #f6f9ff;
+    border-radius: 5px;
+    color: #4154f1;
+    cursor: pointer;
+}
+
+.accordionitem ul li {
+    list-style: circle;
+    padding: 10px 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: #012970;
+    font-size: 15px;
+}
+
+.accordionbody {
+    margin: 0px;
+    padding: 7px 30px;
+    border: none;
+}
+
+.accordionbody ul {
+    margin-bottom: 0px;
+}
+
+.accordionbody ul li a {
+    text-decoration: none;
+    color: #012970;
+    ;
+}
+
+.accordionbody ul li:hover {
+    text-decoration: none;
+    color: #4154f1;
+}
+
+.accordionbody ul li:hover {
+    text-decoration: none;
+    color: #4154f1;
+}
+
+.accordionbody ul li a:hover {
+    text-decoration: none;
+    color: #4154f1;
+}
+
+.dashboardtitle {
+    /* margin-left:14px; */
+    margin-bottom: 10px;
+    padding: 5px;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #012970;
+}
+
+.dashboardtitle a {
+    text-decoration: none;
+    color: #012970;
+}
+
+.dashboardicon {
+    filter: invert(0.4);
+    margin: 0px 10px 0px 4px;
+    padding-left: 10px;
+}
+
+.dashboardtitle:hover {
+    background-color: #f6f9ff;
+    color: #4154f1;
+    cursor: pointer;
+}
+
+.dashboardtitle a:hover {
+    text-decoration: none;
+    color: #4154f1;
+    cursor: pointer;
+}
+
+.cardicon {
+    filter: invert(0.5);
+    padding-right: 10px;
+}
+
+.cardicon:hover {
+    filter: invert(-0.2);
+}
+
+.pages {
+    font-size: small;
+    color: #899bbd;
+    margin: 0px 15px 15px 15px;
+}
+
+/* Add Application */
+.addapplication {
+    align-items: center;
+    justify-content: center;
+    margin-left: 15vw;
+}
+
+/* Process Application */
+.processapplication {
+    align-items: center;
+    justify-content: center;
+    margin-left: 15vw;
+}
+
+/* ====================== DASHBOARD ========================*/
+.dashboard {
+    background-color: #f6f9ff;
+    /* background-color: aqua; */
+    min-width: 85vw;
+    height: 100vh;
+    margin-left: 15vw;
+    transition: 0.5s;
+}
+
+.cardgroup {
+    margin-top: 30px;
+    padding: 0;
+    width: 60%;
+}
+
+.cards {
+    max-width: 300px;
+    margin: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #f6f9ff;
+    border: none;
+}
+
+.dashboardtitle {
+    width: 85%;
+    margin: 0px 0px 0px 25px;
+}
+
+.dashboardtitle span {
+    font-size: x-large;
+    font-weight: 500;
+    color: #012970;
+}
+
+.dashboardsubtitle {
+    min-width: 40px;
+
+    font-size: 14px;
+}
+
+.dashboardsubtitle p {
+    margin: 0;
+    padding: 0;
+}
+
+.dashboardsubtitle p a {
+    text-decoration: none;
+    color: #51678f;
+    font-weight: 600;
+}
+
+.hometab {
+    text-decoration: none;
+    color: #899bbd;
+}
+
+.hometab:hover {
+    text-decoration: none;
+    color: #51678f;
+}
+
+.hometab:active {
+    text-decoration: none;
+    color: #51678f;
+}
+
+/* ================ SIDEBAR SLIDING FUNCTIONALITY ============== */
+
+
+.check:checked~.dashboard {
+    margin-left: 0px;
+}
+
+.check:checked~.sidebar {
+    left: -350px;
+}
+
+.check:checked~.sidebar a span {
+    display: none;
+}
+
+.check:checked~.sidebar a {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}

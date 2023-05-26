@@ -26,15 +26,7 @@
     display: none;
 }
 
-.listicon {
-    margin-left: 70px;
-}
-
 .listimg{
-    margin-left: 70px;
-}
-
-.listiconactive {
     margin-left: 70px;
 }
 
@@ -53,12 +45,10 @@
 } */
 
 @media (min-width: 1200px) {
-
     .toggle-sidebar #main,
     .toggle-sidebar #footer {
         margin-left: 0;
     }
-
     .toggle-sidebar .sidebar {
         left: -300px;
     }
@@ -82,7 +72,6 @@
     color: #012970;
     font-size: 14px;
     font-weight: 500;
-
 }
 
 .dropdownitem {
@@ -133,6 +122,7 @@
     padding-top: 20px;
     border: none;
     font-weight: 500;
+    transition: 0.5s;
 }
 
 .accordionheader {
@@ -145,6 +135,7 @@
     font-weight: 500;
     font-size: 15px;
     color: #012970;
+    margin-right: 45px;
 }
 
 .accordionitem {
@@ -291,7 +282,7 @@
 
 .dashboardtitle {
     width: 85%;
-    margin: 0px 0px 0px 25px;
+    /* margin: 0px 0px 0px 25px; */
 }
 
 .dashboardtitle span {
@@ -335,20 +326,55 @@
 /* ================ SIDEBAR SLIDING FUNCTIONALITY ============== */
 
 
-.check:checked~.dashboard {
+#check:checked~.dashboard {
     margin-left: 0px;
 }
 
-.check:checked~.sidebar {
+#check:checked~.sidebar {
     left: -350px;
 }
 
-.check:checked~.sidebar a span {
+#check:checked~.sidebar a span {
     display: none;
 }
 
-.check:checked~.sidebar a {
+#check:checked~.sidebar a {
     font-size: 20px;
     margin-left: 170px;
     width: 80px;
+}
+
+/* ========================= TOGGLE BUTTON ========================== */
+/* .listiconactive ~ .sidebar{
+    left: -15vw;
+    background-color: red;
+}
+
+.listicon ~ .sidebar{
+    left: -190px;
+} */
+
+/* =================== BOOTSTRAPMADE ===================== */
+
+.togglesidebarbtn {
+    cursor: pointer;
+    color: #012970;
+}
+
+@media (max-width: 1199px) {
+    .togglesidebar .sidebar {
+        left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .togglesidebar #main,
+    .togglesidebar #footer {
+        margin-left: 0;
+    }
+
+    .togglesidebar .sidebar {
+        left: -300px;
+    }
 }

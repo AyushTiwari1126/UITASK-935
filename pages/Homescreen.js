@@ -10,10 +10,37 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
 import Image from 'next/image';
 
+
 const Homescreen = () => {
+
+    // if (select('.togglesidebarbtn')) {
+    //     on('click', '.togglesidebarbtn', function(e) {
+    //       select('body').classList.toggle('togglesidebar')
+    //     })
+    //   }
+
+    // let [toggled, setToggled] = React.useState(true);
+    // let toggleImage = () => {
+    //     let val = !toggled;
+    //     (val === !toggled ? setToggled(!toggled) : setToggled(toggled))
+    // };
+
+    // ---------------------------------------
+
+    let sidebarObj;
+    function onCreate() {
+        sidebarObj.element.style.visibility = '';
+    }
+
+    function toggleClick() {
+        sidebarObj.toggle();
+    }
+
     return (
         <>
-            <input type="checkbox" className={styles.check} />
+            <input type="checkbox" id={styles.check} />
+            {/* <input type="checkbox" id='check' /> */}
+
             {/* ============ NAVIGATION BAR =========== */}
             <div className={styles.navigationtitle}>
                 <Navbar bg="light" expand="lg">
@@ -24,16 +51,20 @@ const Homescreen = () => {
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
+
                             <Nav
-                                className="me-auto my-2 my-lg-0"
+                                class Name="me-auto my-2 my-lg-0"
                                 style={{ maxHeight: '100px' }}
                                 navbarScroll
                             >
 
-                                <Nav.Link href="#" className={styles.listimg}>
-                                    <Image src="/list.svg" width={30} height={30} />
-                                    {/* {toggled ? <Sidebar /> : ''} */}
-                                </Nav.Link>
+                                <label htmlFor={styles.check}>
+                                    <Image src="/list.svg" width={30} height={30} id='navbtn' />
+                                </label>
+
+                                {/* <Nav.Link href="#" id={styles.listimg}>
+                                    <Image src="/list.svg" width={30} height={30} className={styles.togglesidebarbtn} />
+                                </Nav.Link> */}
 
                                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
@@ -85,7 +116,7 @@ const Homescreen = () => {
 
             {/* ========================== SIDEBAR ======================== */}
 
-            <div id='sidebarid' className={styles.sidebar}>
+            <div id='sidebarid' className={styles.sidebar} ref={Sidebar => sidebarObj = Sidebar} style={{ visibility: "hidden" }} created={onCreate}>
                 <div className={styles.accordion}>
                     <Accordion defaultActiveKey="0" >
 

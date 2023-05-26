@@ -1,0 +1,21 @@
+.homebox{
+    display: flex;
+}
+
+.homebox .divSidebar {
+    margin-top: 5px;
+    height: 550px;
+    width: 300px;
+    background-color: #6cb4ee;
+    transition: .3s all; /* animation duration */
+    opacity:1;
+}
+
+.homebox.show .divSidebar{
+    width:300px;
+    opacity:1; 
+}
+.homebox.hide .divSidebar.hide{
+    width:0;
+    opacity:.5; 
+}

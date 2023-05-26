@@ -5,11 +5,11 @@
   box-sizing: border-box;
   margin: 0px;
 
-  margin: 17px 0px 0px -205px;
+  /* margin: 0px; */
   padding: 0px;
   width: 15vw;
   height: 100vh;
-  /* box-shadow: 0px 0px 10px rgba(1, 41, 112, 0.1); */
+  box-shadow: 0px 0px 10px rgba(1, 41, 112, 0.1);
 }
 
 .accordion {

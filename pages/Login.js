@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Login = () => {
   return (
-    <div class="container" style={{ marginLeft: "15vw"}}>
+    <div class="container" >
 
       <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
         <div class="container">
@@ -62,7 +62,7 @@ const Login = () => {
               </div>
 
               <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/" className={styles.bootstrapmade}>BootstrapMade</a>
+                Designed by <a href="#" className={styles.bootstrapmade}>BootstrapMade</a>
               </div>
 
             </div>

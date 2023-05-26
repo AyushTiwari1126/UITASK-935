@@ -49,10 +49,12 @@
 } */
 
 @media (min-width: 1200px) {
+
     .toggle-sidebar #main,
     .toggle-sidebar #footer {
         margin-left: 0;
     }
+
     .toggle-sidebar .sidebar {
         left: -300px;
     }
@@ -97,14 +99,4 @@
 .designation {
     margin-left: 40px;
     font-size: 14px;
-}
-
-/* ================================================================= */
-
-
-.openmenu {
-    margin: 0px;
-    padding: 0px;
-    width: 16vw;
-
 }

@@ -47,49 +47,49 @@ const Sidebar = () => {
                             <Accordion.Body className={styles.accordionbody}>
                                 <ul>
                                     <li>
-                                        <a href="/addapplication">Add Application</a>
+                                        <a href="#">Add Application</a>
                                     </li>
                                     <li>
-                                        <a href="/processapplication">Process Application</a>
+                                        <a href="#">Process Application</a>
                                     </li>
                                     <li>
-                                        <a href="/Alerts">Alerts</a>
+                                        <a href="#">Alerts</a>
                                     </li>
                                     <li>
-                                        <a href="/Accordion">Accordion</a>
+                                        <a href="#">Accordion</a>
                                     </li>
                                     <li>
-                                        <a href="/Badges">Badges</a>
+                                        <a href="#">Badges</a>
                                     </li>
                                     <li>
-                                        <a href="/Breadcrumbs">Breadcrumbs</a>
+                                        <a href="#">Breadcrumbs</a>
                                     </li>
                                     <li>
-                                        <a href="/Buttons">Buttons</a>
+                                        <a href="#">Buttons</a>
                                     </li>
                                     <li>
-                                        <a href="/Cards">Cards</a>
+                                        <a href="#">Cards</a>
                                     </li>
                                     <li>
-                                        <a href="/Carousel">Carousel</a>
+                                        <a href="#">Carousel</a>
                                     </li>
                                     <li>
-                                        <a href="/List-Group">List Group</a>
+                                        <a href="#">List Group</a>
                                     </li>
                                     <li>
-                                        <a href="/Modal">Modal</a>
+                                        <a href="#">Modal</a>
                                     </li>
                                     <li>
-                                        <a href="/Pagination">Pagination</a>
+                                        <a href="#">Pagination</a>
                                     </li>
                                     <li>
-                                        <a href="/Progress">Progress</a>
+                                        <a href="#">Progress</a>
                                     </li>
                                     <li>
-                                        <a href="/Spinners">Spinners</a>
+                                        <a href="#">Spinners</a>
                                     </li>
                                     <li>
-                                        <a href="/Tooltips">Tooltips</a>
+                                        <a href="#">Tooltips</a>
                                     </li>
                                 </ul>
                             </Accordion.Body>
@@ -105,10 +105,10 @@ const Sidebar = () => {
                             <Accordion.Body className={styles.accordionbody}>
                                 <ul>
                                     <li>
-                                        <a href="/addapplication">Add Application</a>
+                                        <a href="#">Add Application</a>
                                     </li>
                                     <li>
-                                        <a href="/processapplication">Process Application</a>
+                                        <a href="#">Process Application</a>
                                     </li>
                                 </ul>
                             </Accordion.Body>

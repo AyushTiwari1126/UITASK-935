@@ -1,5 +1,5 @@
 /* =============== NAVIGATION BAR ================ */
-#check{
+#check {
     display: none;
 }
 
@@ -26,7 +26,7 @@
     margin-top: 0px;
 }
 
-.listimg{
+.listimg {
     margin-left: 70px;
 }
 
@@ -57,6 +57,9 @@
     color: #012970;
     font-size: 14px;
     font-weight: 500;
+    /* position: fixed;
+    top: 65px;
+    right: 10px; */
 }
 
 .dropdownitem {
@@ -216,7 +219,7 @@
 .pages {
     font-size: small;
     color: #899bbd;
-    margin: 0px 15px 15px 15px;
+    margin: 0px 15px 15px 13px;
 }
 
 /* Add Application */
@@ -240,6 +243,23 @@
     transition: 0.5s;
 }
 
+#cardgroup1 {
+    margin-left: 24px;
+}
+
+.date {
+    color: #899bbd;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.threedoticon{
+    position: absolute;
+    left: 310px;
+    top: 5px;
+}
+
 .cardgroup {
     margin: 0;
     padding: 0;
@@ -250,8 +270,9 @@
     max-width: 300px;
     margin: 10px 30px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px #f6f9ff;
+    box-shadow: 0px 5px 5px 5px #f6f9ff;
     border: none;
+    border: 2px solid white;
 }
 
 .dashboardheading {
@@ -299,7 +320,7 @@
 }
 
 /* =============== Alerts ================== */
-.alerts{
+.alerts {
     margin-left: 15vw;
 }
 
@@ -323,51 +344,56 @@
     width: 80px;
 }
 
-#check:checked ~ .accordionitem{
+#check:checked~.accordionitem {
     left: -400px;
 }
 
-#check:checked ~ #footer{
+#check:checked~#footer {
+    margin-left: 0px;
+    min-width: 85vw;
+}
+
+#check:checked~.routingpages {
     margin-left: 0px;
 }
 
-#check:checked ~ .routingpages{
+#check:checked~.addapplication {
     margin-left: 0px;
 }
 
-#check:checked ~ .addapplication{
-    margin-left: 0px;
-}
-#check:checked ~ .processapplication{
+#check:checked~.processapplication {
     margin-left: 0px;
 }
 
 /* ============================ FOOTER =============================== */
-#footer{
+
+#footer {
     position: fixed;
     bottom: 0vh;
     margin-left: 15vw;
     transition: 0.5s;
-    box-shadow: 0px 0px 1px 0.5px rgba(70, 92, 130, 0.6);
+    box-shadow: 0px 0px 0px 0.5px rgba(70, 92, 130, 0.6);
     background-color: #f6f9ff;
-    min-width: 85vw;
-}
-.footertext{
-    margin-left: 800px;
+    width: 100vw;
+    padding: 10px 0px;
 }
 
-#creditstext{
+.footertext {
+    margin-left: 750px;
+}
+
+#creditstext {
     margin-left: 60px;
 }
 
 /* ========================== LOGIN PAGE ============================= */
-.loginimage{
+.loginimage {
     width: 30px;
     filter: invert(-0.2);
     margin-right: 5px;
 }
 
-.niceadmintitle{
+.niceadmintitle {
     text-decoration: none;
     display: flex;
 }
@@ -379,6 +405,7 @@
     text-decoration: none;
 }
 
-.createaccount, .bootstrapmade{
+.createaccount,
+.bootstrapmade {
     text-decoration: none;
 }

@@ -15,7 +15,7 @@ const Homescreen = () => {
 
     return (
         <>
-            {/* ======================== NAVIGATION BAR =========================== */}
+            {/* ============================ NAVIGATION BAR ============================== */}
             <input type="checkbox" id={styles.check} />
             <div className={styles.navigationtitle}>
                 <Navbar bg="light" expand="lg">
@@ -74,7 +74,7 @@ const Homescreen = () => {
                 </Navbar>
             </div>
 
-            {/* ============================== SIDEBAR =============================== */}
+            {/* ================================= SIDEBAR =================================== */}
 
             <div id='sidebarid' className={styles.sidebar}>
                 <div className={styles.accordion}>
@@ -290,10 +290,9 @@ const Homescreen = () => {
                 </div>
             </div >
 
-            {/* ===================== DASHBOARD =========================== */}
+            {/* ============================= DASHBOARD ================================= */}
 
             {/* <div className={styles.dashboard}>
-
                 <div className={styles.dashboardheading}>
                     <span>Dashboard</span>
                     <Nav aria-label="breadcrumb">
@@ -303,7 +302,6 @@ const Homescreen = () => {
                         </ol>
                     </Nav>
                 </div>
-
                 <CardGroup className={styles.cardgroup}>
                     <Card className={styles.cards}>
                         <Card.Body>
@@ -335,8 +333,8 @@ const Homescreen = () => {
                 </CardGroup>
             </div> */}
 
-            {/* ============================== Footer ==================================== */}
-
+            {/* ============================== FOOTER ==================================== */}
+            
             <footer id={styles.footer} class="footer" className={styles.myfooter}>
                 <div className={styles.footertext}>
                     <div class="copyright">
@@ -347,7 +345,6 @@ const Homescreen = () => {
                     </div>
                 </div>
             </footer>
-
             <Link href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></Link>
             
         </>

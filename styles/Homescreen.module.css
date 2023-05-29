@@ -85,7 +85,6 @@
     display: flex;
     box-sizing: border-box;
     margin: 0px;
-
     /* margin: 17px 0px 0px -205px; */
     padding: 0px;
     width: 15vw;
@@ -121,6 +120,7 @@
     font-weight: 500;
     margin: 0;
     padding: 0;
+    transition: 0.5s;
 }
 
 .accordianitem:hover {
@@ -137,6 +137,7 @@
     text-decoration: none;
     color: #012970;
     font-size: 15px;
+    transition: 0.5s;
 }
 
 .accordionbody {
@@ -322,7 +323,11 @@
     width: 80px;
 }
 
-#check:checked ~ .myfooter{
+#check:checked ~ .accordionitem{
+    left: -400px;
+}
+
+#check:checked ~ #footer{
     margin-left: 0px;
 }
 
@@ -338,19 +343,20 @@
 }
 
 /* ============================ FOOTER =============================== */
-.myfooter{
-    box-shadow: 0px 0px 1px 0px rgba(70, 92, 130, 0.6);
-    background-color: #f6f9ff;
-    min-width: 85vw;
+#footer{
+    position: fixed;
+    bottom: 0vh;
     margin-left: 15vw;
     transition: 0.5s;
-    
+    box-shadow: 0px 0px 1px 0.5px rgba(70, 92, 130, 0.6);
+    background-color: #f6f9ff;
+    min-width: 85vw;
+}
+.footertext{
+    margin-left: 800px;
 }
 
-.footertext{
-    margin-left: 815px;
-}
-.creditstext{
+#creditstext{
     margin-left: 60px;
 }
 

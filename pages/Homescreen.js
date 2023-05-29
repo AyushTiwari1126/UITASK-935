@@ -116,12 +116,6 @@ const Homescreen = () => {
                             <Accordion.Body className={styles.accordionbody}>
                                 <ul>
                                     <li>
-                                        <Link href="/addapplication">Add Application</Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/processapplication">Process Application</Link>
-                                    </li>
-                                    <li>
                                         <Link href="/Alerts">Alerts</Link>
                                     </li>
                                     <li>
@@ -174,10 +168,10 @@ const Homescreen = () => {
                             <Accordion.Body className={styles.accordionbody}>
                                 <ul>
                                     <li>
-                                        <Link href="/addapplication">Add Application</Link>
+                                        <Link href="#">Add Application</Link>
                                     </li>
                                     <li>
-                                        <Link href="/processapplication">Process Application</Link>
+                                        <Link href="#">Process Application</Link>
                                     </li>
                                 </ul>
                             </Accordion.Body>
@@ -343,18 +337,19 @@ const Homescreen = () => {
 
             {/* ============================== Footer ==================================== */}
 
-            <footer id="footer" class="footer" className={styles.myfooter}>
+            <footer id={styles.footer} class="footer" className={styles.myfooter}>
                 <div className={styles.footertext}>
                     <div class="copyright">
                         &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
                     </div>
-                    <div class="credits" className={styles.creditstext}>
+                    <div class="credits" id={styles.creditstext}>
                         Designed by <Link href="https://bootstrapmade.com/">BootstrapMade</Link>
                     </div>
                 </div>
             </footer>
 
             <Link href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></Link>
+            
         </>
     )
 }

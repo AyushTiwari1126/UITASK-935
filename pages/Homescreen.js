@@ -9,80 +9,40 @@ import Accordion from 'react-bootstrap/Accordion';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
 import Image from 'next/image';
-
+import Link from 'next/link';
 
 const Homescreen = () => {
 
-    // if (select('.togglesidebarbtn')) {
-    //     on('click', '.togglesidebarbtn', function(e) {
-    //       select('body').classList.toggle('togglesidebar')
-    //     })
-    //   }
-
-    // let [toggled, setToggled] = React.useState(true);
-    // let toggleImage = () => {
-    //     let val = !toggled;
-    //     (val === !toggled ? setToggled(!toggled) : setToggled(toggled))
-    // };
-
-    // ---------------------------------------
-
-    let sidebarObj;
-    function onCreate() {
-        sidebarObj.element.style.visibility = '';
-    }
-
-    function toggleClick() {
-        sidebarObj.toggle();
-    }
-
     return (
         <>
+            {/* ======================== NAVIGATION BAR =========================== */}
             <input type="checkbox" id={styles.check} />
-            {/* <input type="checkbox" id='check' /> */}
-
-            {/* ============ NAVIGATION BAR =========== */}
             <div className={styles.navigationtitle}>
                 <Navbar bg="light" expand="lg">
                     <Container fluid>
-                        <Navbar.Brand href="/" className={styles.niceadmin} >
+                        <Navbar.Brand href="/" className={styles.niceadmin}>
                             <Image className={styles.navbarlogo} src="/logo.png" width={30} height={30} />
                             NiceAdmin
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
-
                             <Nav
-                                class Name="me-auto my-2 my-lg-0"
+                                className="me-auto my-2 my-lg-0"
                                 style={{ maxHeight: '100px' }}
                                 navbarScroll
                             >
 
                                 <label htmlFor={styles.check}>
-                                    <Image src="/list.svg" width={30} height={30} id='navbtn' />
+                                    <Image src="/list.svg" width={30} height={30} className={styles.togglesidebarbtn} />
                                 </label>
 
-                                {/* <Nav.Link href="#" id={styles.listimg}>
-                                    <Image src="/list.svg" width={30} height={30} className={styles.togglesidebarbtn} />
-                                </Nav.Link> */}
-
-                                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                    </div>
-                                </div>
-
-                                <Form className={styles.dflex} >
+                                <Form className={styles.dflex}>
                                     <Form.Control
                                         type="search"
                                         placeholder="Search"
                                         className="me-2"
-                                        aria-label="Search"
-                                    />
+                                        aria-label="Search" />
+
                                 </Form>
                             </Nav>
 
@@ -114,17 +74,17 @@ const Homescreen = () => {
                 </Navbar>
             </div>
 
-            {/* ========================== SIDEBAR ======================== */}
+            {/* ============================== SIDEBAR =============================== */}
 
-            <div id='sidebarid' className={styles.sidebar} ref={Sidebar => sidebarObj = Sidebar} style={{ visibility: "hidden" }} created={onCreate}>
+            <div id='sidebarid' className={styles.sidebar}>
                 <div className={styles.accordion}>
                     <Accordion defaultActiveKey="0" >
 
                         <div className={styles.dashboardtitle}>
-                            <a href="/Dashboard">
+                            <Link href="/Dashboard">
                                 <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
                                 Dashboard
-                            </a>
+                            </Link>
                         </div>
 
                         <Accordion.Item eventKey="6" className={styles.accordionitem}>
@@ -137,10 +97,10 @@ const Homescreen = () => {
                             <Accordion.Body className={styles.accordionbody}>
                                 <ul>
                                     <li>
-                                        <a href="/addapplication">Add Application</a>
+                                        <Link href="/addapplication">Add Application</Link>
                                     </li>
                                     <li>
-                                        <a href="/processapplication">Process Application</a>
+                                        <Link href="/processapplication">Process Application</Link>
                                     </li>
                                 </ul>
                             </Accordion.Body>
@@ -156,49 +116,49 @@ const Homescreen = () => {
                             <Accordion.Body className={styles.accordionbody}>
                                 <ul>
                                     <li>
-                                        <a href="/addapplication">Add Application</a>
+                                        <Link href="/addapplication">Add Application</Link>
                                     </li>
                                     <li>
-                                        <a href="/processapplication">Process Application</a>
+                                        <Link href="/processapplication">Process Application</Link>
                                     </li>
                                     <li>
-                                        <a href="/Alerts">Alerts</a>
+                                        <Link href="/Alerts">Alerts</Link>
                                     </li>
                                     <li>
-                                        <a href="/Accordion">Accordion</a>
+                                        <Link href="/Accordion">Accordion</Link>
                                     </li>
                                     <li>
-                                        <a href="/Badges">Badges</a>
+                                        <Link href="/Badges">Badges</Link>
                                     </li>
                                     <li>
-                                        <a href="/Breadcrumbs">Breadcrumbs</a>
+                                        <Link href="/Breadcrumbs">Breadcrumbs</Link>
                                     </li>
                                     <li>
-                                        <a href="/Buttons">Buttons</a>
+                                        <Link href="/Buttons">Buttons</Link>
                                     </li>
                                     <li>
-                                        <a href="/Cards">Cards</a>
+                                        <Link href="/Cards">Cards</Link>
                                     </li>
                                     <li>
-                                        <a href="/Carousel">Carousel</a>
+                                        <Link href="/Carousel">Carousel</Link>
                                     </li>
                                     <li>
-                                        <a href="/List-Group">List Group</a>
+                                        <Link href="/List-Group">List Group</Link>
                                     </li>
                                     <li>
-                                        <a href="/Modal">Modal</a>
+                                        <Link href="/Modal">Modal</Link>
                                     </li>
                                     <li>
-                                        <a href="/Pagination">Pagination</a>
+                                        <Link href="/Pagination">Pagination</Link>
                                     </li>
                                     <li>
-                                        <a href="/Progress">Progress</a>
+                                        <Link href="/Progress">Progress</Link>
                                     </li>
                                     <li>
-                                        <a href="/Spinners">Spinners</a>
+                                        <Link href="/Spinners">Spinners</Link>
                                     </li>
                                     <li>
-                                        <a href="/Tooltips">Tooltips</a>
+                                        <Link href="/Tooltips">Tooltips</Link>
                                     </li>
                                 </ul>
                             </Accordion.Body>
@@ -214,10 +174,10 @@ const Homescreen = () => {
                             <Accordion.Body className={styles.accordionbody}>
                                 <ul>
                                     <li>
-                                        <a href="/addapplication">Add Application</a>
+                                        <Link href="/addapplication">Add Application</Link>
                                     </li>
                                     <li>
-                                        <a href="/processapplication">Process Application</a>
+                                        <Link href="/processapplication">Process Application</Link>
                                     </li>
                                 </ul>
                             </Accordion.Body>
@@ -233,10 +193,10 @@ const Homescreen = () => {
                             <Accordion.Body className={styles.accordionbody}>
                                 <ul>
                                     <li>
-                                        <a href="#">Add Application</a>
+                                        <Link href="#">Add Application</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Process Application</a>
+                                        <Link href="#">Process Application</Link>
                                     </li>
                                 </ul>
                             </Accordion.Body>
@@ -252,10 +212,10 @@ const Homescreen = () => {
                             <Accordion.Body className={styles.accordionbody}>
                                 <ul>
                                     <li>
-                                        <a href="#">Add Application</a>
+                                        <Link href="#">Add Application</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Process Application</a>
+                                        <Link href="#">Process Application</Link>
                                     </li>
                                 </ul>
                             </Accordion.Body>
@@ -271,10 +231,10 @@ const Homescreen = () => {
                             <Accordion.Body className={styles.accordionbody}>
                                 <ul>
                                     <li>
-                                        <a href="#">Add Application</a>
+                                        <Link href="#">Add Application</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Process Application</a>
+                                        <Link href="#">Process Application</Link>
                                     </li>
                                 </ul>
                             </Accordion.Body>
@@ -285,69 +245,69 @@ const Homescreen = () => {
                         </div>
 
                         <div className={styles.dashboardtitle}>
-                            <a href="#">
+                            <Link href="#">
                                 <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
                                 Profile
-                            </a>
+                            </Link>
                         </div>
 
                         <div className={styles.dashboardtitle}>
-                            <a href="#">
+                            <Link href="#">
                                 <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
                                 F.A.Q
-                            </a>
+                            </Link>
                         </div>
 
                         <div className={styles.dashboardtitle}>
-                            <a href="#">
+                            <Link href="#">
                                 <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
                                 Contact
-                            </a>
+                            </Link>
                         </div>
 
                         <div className={styles.dashboardtitle}>
-                            <a href="#">
+                            <Link href="#">
                                 <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
                                 Register
-                            </a>
+                            </Link>
                         </div>
 
                         <div className={styles.dashboardtitle}>
-                            <a href="/Login">
+                            <Link href="/Login">
                                 <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
                                 Login
-                            </a>
+                            </Link>
                         </div>
 
                         <div className={styles.dashboardtitle}>
-                            <a href="#">
+                            <Link href="#">
                                 <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
                                 Error 404
-                            </a>
+                            </Link>
                         </div>
 
                         <div className={styles.dashboardtitle}>
-                            <a href="#">
+                            <Link href="#">
                                 <Image className={styles.dashboardicon} src="/credit-card.svg" width={30} height={30} />
                                 Blank
-                            </a>
+                            </Link>
                         </div>
                     </Accordion>
                 </div>
             </div >
 
-            {/* ==================== DASHBOARD ========================== */}
+            {/* ===================== DASHBOARD =========================== */}
 
-            <div className={styles.dashboard}>
+            {/* <div className={styles.dashboard}>
 
-                <div className={styles.dashboardtitle}>
+                <div className={styles.dashboardheading}>
                     <span>Dashboard</span>
-                    <nav aria-label="breadcrumb">
+                    <Nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item" ><a className={styles.hometab} href="#">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page" style={{ cursor: 'pointer' }}> Dashboard</li>
                         </ol>
-                    </nav>
+                    </Nav>
                 </div>
 
                 <CardGroup className={styles.cardgroup}>
@@ -365,7 +325,7 @@ const Homescreen = () => {
                             <Card.Title>Revenue</Card.Title>
                             <Card.Text>
                                 This card has supporting text below as a natural lead-in to
-                                additional content.{' '}
+                                additional content.
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -379,7 +339,22 @@ const Homescreen = () => {
                         </Card.Body>
                     </Card>
                 </CardGroup>
-            </div>
+            </div> */}
+
+            {/* ============================== Footer ==================================== */}
+
+            <footer id="footer" class="footer" className={styles.myfooter}>
+                <div className={styles.footertext}>
+                    <div class="copyright">
+                        &copy; Copyright <strong><span>NiceAdmin</span></strong>. All Rights Reserved
+                    </div>
+                    <div class="credits" className={styles.creditstext}>
+                        Designed by <Link href="https://bootstrapmade.com/">BootstrapMade</Link>
+                    </div>
+                </div>
+            </footer>
+
+            <Link href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></Link>
         </>
     )
 }

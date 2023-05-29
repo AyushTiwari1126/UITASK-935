@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/Footer.module.css'
+import styles from '@/styles/Homescreen.module.css'
 
 const Footer = () => {
     return (
@@ -19,5 +19,4 @@ const Footer = () => {
         </>
     )
 }
-
 export default Footer

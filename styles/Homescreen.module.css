@@ -1,4 +1,8 @@
 /* =============== NAVIGATION BAR ================ */
+#check{
+    display: none;
+}
+
 .navigationtitle {
     box-shadow: 0px 0px 25px 5px rgb(228, 226, 226);
 }
@@ -22,36 +26,17 @@
     margin-top: 0px;
 }
 
-.cus_close_slide {
-    display: none;
-}
-
 .listimg{
     margin-left: 70px;
 }
 
 .togglesidebarbtn {
+    margin-top: 6px;
     font-size: 75px;
     padding-left: 0px;
     cursor: pointer;
     color: #012970;
-    margin-left: 70px
-}
-
-/* @media (max-width: 1199px) {
-    .toggle-sidebar .sidebar {
-        left: 0;
-    }
-} */
-
-@media (min-width: 1200px) {
-    .toggle-sidebar #main,
-    .toggle-sidebar #footer {
-        margin-left: 0;
-    }
-    .toggle-sidebar .sidebar {
-        left: -300px;
-    }
+    margin-left: 100px
 }
 
 .dflex {
@@ -94,17 +79,9 @@
     font-size: 14px;
 }
 
-/* ====================== */
-
-.openmenu {
-    margin: 0px;
-    padding: 0px;
-    width: 16vw;
-}
-
 /* ======================== SIDEBAR ======================== */
 .sidebar {
-    position: absolute;
+    position: fixed;
     display: flex;
     box-sizing: border-box;
     margin: 0px;
@@ -114,7 +91,7 @@
     width: 15vw;
     height: 100vh;
     transition: 0.5s;
-    /* box-shadow: 0px 0px 10px rgba(1, 41, 112, 0.1); */
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
 }
 
 .accordion {
@@ -175,7 +152,6 @@
 .accordionbody ul li a {
     text-decoration: none;
     color: #012970;
-    ;
 }
 
 .accordionbody ul li:hover {
@@ -244,22 +220,19 @@
 
 /* Add Application */
 .addapplication {
-    align-items: center;
-    justify-content: center;
     margin-left: 15vw;
+    transition: 0.5s;
 }
 
 /* Process Application */
 .processapplication {
-    align-items: center;
-    justify-content: center;
     margin-left: 15vw;
+    transition: 0.5s;
 }
 
-/* ====================== DASHBOARD ========================*/
+/* ===================== DASHBOARD ================== */
 .dashboard {
     background-color: #f6f9ff;
-    /* background-color: aqua; */
     min-width: 85vw;
     height: 100vh;
     margin-left: 15vw;
@@ -267,7 +240,7 @@
 }
 
 .cardgroup {
-    margin-top: 30px;
+    margin: 0;
     padding: 0;
     width: 60%;
 }
@@ -280,12 +253,13 @@
     border: none;
 }
 
-.dashboardtitle {
+.dashboardheading {
     width: 85%;
-    /* margin: 0px 0px 0px 25px; */
+    margin-left: 25px;
+    padding-top: 12px;
 }
 
-.dashboardtitle span {
+.dashboardheading span {
     font-size: x-large;
     font-weight: 500;
     color: #012970;
@@ -323,15 +297,19 @@
     color: #51678f;
 }
 
-/* ================ SIDEBAR SLIDING FUNCTIONALITY ============== */
+/* =============== Alerts ================== */
+.alerts{
+    margin-left: 15vw;
+}
 
+/* ================ SIDEBAR SLIDING FUNCTIONALITY ============== */
 
 #check:checked~.dashboard {
     margin-left: 0px;
 }
 
 #check:checked~.sidebar {
-    left: -350px;
+    left: -400px;
 }
 
 #check:checked~.sidebar a span {
@@ -344,37 +322,57 @@
     width: 80px;
 }
 
-/* ========================= TOGGLE BUTTON ========================== */
-/* .listiconactive ~ .sidebar{
-    left: -15vw;
-    background-color: red;
+#check:checked ~ .myfooter{
+    margin-left: 0px;
 }
 
-.listicon ~ .sidebar{
-    left: -190px;
-} */
+#check:checked ~ .routingpages{
+    margin-left: 0px;
+}
 
-/* =================== BOOTSTRAPMADE ===================== */
+#check:checked ~ .addapplication{
+    margin-left: 0px;
+}
+#check:checked ~ .processapplication{
+    margin-left: 0px;
+}
 
-.togglesidebarbtn {
-    cursor: pointer;
+/* ============================ FOOTER =============================== */
+.myfooter{
+    box-shadow: 0px 0px 1px 0px rgba(70, 92, 130, 0.6);
+    background-color: #f6f9ff;
+    min-width: 85vw;
+    margin-left: 15vw;
+    transition: 0.5s;
+    
+}
+
+.footertext{
+    margin-left: 815px;
+}
+.creditstext{
+    margin-left: 60px;
+}
+
+/* ========================== LOGIN PAGE ============================= */
+.loginimage{
+    width: 30px;
+    filter: invert(-0.2);
+    margin-right: 5px;
+}
+
+.niceadmintitle{
+    text-decoration: none;
+    display: flex;
+}
+
+.nicadmin {
+    font-weight: 500;
+    font-size: 26px;
     color: #012970;
+    text-decoration: none;
 }
 
-@media (max-width: 1199px) {
-    .togglesidebar .sidebar {
-        left: 0;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .togglesidebar #main,
-    .togglesidebar #footer {
-        margin-left: 0;
-    }
-
-    .togglesidebar .sidebar {
-        left: -300px;
-    }
+.createaccount, .bootstrapmade{
+    text-decoration: none;
 }

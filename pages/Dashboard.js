@@ -1,5 +1,6 @@
 import React from 'react'
-import styles from '@/styles/Dashboard.module.css'
+// import styles from '@/styles/Dashboard.module.css'
+import styles from '@/styles/Homescreen.module.css'
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 
@@ -8,7 +9,7 @@ const Dashboard = () => {
         <>
             <div className={styles.dashboard}>
 
-                <div className={styles.dashboardtitle}>
+                <div className={styles.dashboardheading}>
                     <span>Dashboard</span>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">

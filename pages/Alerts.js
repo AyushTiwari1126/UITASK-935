@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/Alerts.module.css'
+import styles from '@/styles/Homescreen.module.css'
 
 const Alerts = () => {
     return (

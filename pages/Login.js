@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/Login.module.css'
+import styles from '@/styles/Homescreen.module.css'
 import Image from 'next/image'
 
 const Login = () => {
@@ -14,7 +14,7 @@ const Login = () => {
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto" className={styles.niceadmintitle}>
                 <Image className={styles.loginimage} src="/logo.png" width={30} height={30} />
-                  <span class="d-none d-lg-block" className={styles.niceadmin}>NiceAdmin</span>
+                  <span class="d-none d-lg-block" className={styles.nicadmin}>NiceAdmin</span>
                 </a>
               </div>
 
